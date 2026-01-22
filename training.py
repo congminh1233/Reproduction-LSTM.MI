@@ -596,12 +596,12 @@ if __name__ == "__main__":
     # train_lstm_mi_kfold(
     #     df,
     #     n_splits=10,
-    #     maxlen=75,
+    #     maxlen=64,
     #     embedding_dim=128,
     #     lstm_units=128,
     #     gamma=0.3,
     #     batch_size=256,
-    #     epochs=30,
+    #     epochs=40,
     #     random_state=42
     # )
 
@@ -609,11 +609,11 @@ if __name__ == "__main__":
     pipeline = train_lstm_mi(
         df=df,
         label_map=label_map,
-        maxlen=75,
+        maxlen=64,
         gamma=0.3,
         embedding_dim=128,
         lstm_units=128,
-        epochs=30,
+        epochs=40,
         batch_size=256,
         test_size=0.2,
         use_full_cost_matrix=False,
